@@ -13,7 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RespawnTester.Application",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RespawnTester.Domain", "src\RespawnTester.Domain\RespawnTester.Domain.csproj", "{77452E84-B06F-49EE-8F38-1BE76187CEC8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RespawnTestes.Infrastructure", "RespawnTestes.Infrastructure\RespawnTestes.Infrastructure.csproj", "{A5DE6871-A5A0-448F-B21E-056788059748}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RespawnTester.Infrastructure", "RespawnTestes.Infrastructure\RespawnTester.Infrastructure.csproj", "{A5DE6871-A5A0-448F-B21E-056788059748}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
