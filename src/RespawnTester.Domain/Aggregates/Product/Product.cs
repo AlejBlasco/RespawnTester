@@ -1,7 +1,12 @@
-﻿namespace RespawnTester.Domain.Aggregates.Product;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
+namespace RespawnTester.Domain.Aggregates.Product;
+
+[Table("Products")]
 public class Product
 {
+    [Key]
     public Guid Id { get; set; }
 
     public string Name { get; set; } = string.Empty;

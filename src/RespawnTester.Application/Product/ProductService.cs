@@ -1,17 +1,15 @@
-﻿using MediatR;
-using Microsoft.Extensions.Logging;
+﻿using Microsoft.Extensions.Logging;
 using RespawnTester.Domain.Aggregates.Product;
 using System.Text.Json;
 
 namespace RespawnTester.Application.Product;
 
-public class GetProductsAllQueryHandler
-    : IRequestHandler<GetProductsAllQuery, IEnumerable<Model.Product>>
+public class ProductService : IProductService
 {
-    private readonly ILogger<GetProductsAllQueryHandler> _logger;
+    private readonly ILogger<ProductService> _logger;
     private readonly IProductRepository _productRepository;
 
-    public GetProductsAllQueryHandler(ILogger<GetProductsAllQueryHandler> logger, IProductRepository productRepository)
+    public ProductService(ILogger<ProductService> logger, IProductRepository productRepository)
     {
         _logger = logger
             ?? throw new ArgumentNullException(nameof(logger));
@@ -20,9 +18,9 @@ public class GetProductsAllQueryHandler
             ?? throw new ArgumentNullException(nameof(productRepository));
     }
 
-    public async Task<IEnumerable<Model.Product>> Handle(GetProductsAllQuery query, CancellationToken cancellationToken)
+    public async Task<IEnumerable<Model.Product>> GetProductsAll()
     {
-        _logger.LogDebug($"GetProductsAllQueryHandler: {JsonSerializer.Serialize(query)}");
+        _logger.LogDebug($"GetProductsAllQueryHandler: ");
 
         var entities = await _productRepository.Get(filter: null, orderBy: null);
 
@@ -45,3 +43,5 @@ public class GetProductsAllQueryHandler
         return response;
     }
 }
+
+
