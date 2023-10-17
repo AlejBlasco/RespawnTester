@@ -63,7 +63,7 @@ public class ProductService : IProductService
 
         return response;
     }
-    
+
     public async Task UpdateProduct(Model.Product product)
     {
         if (product == null)
@@ -90,6 +90,9 @@ public class ProductService : IProductService
 
     public async Task DeleteProduct(Guid productId)
     {
+        if (productId == Guid.Empty)
+            throw new ArgumentNullException(nameof(productId));
+
         _logger.LogDebug($"DeleteProduct: {productId}");
 
         await _productRepository.Delete(productId);
