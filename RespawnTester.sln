@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RespawnTester.Domain", "src
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RespawnTester.Infrastructure", "src\RespawnTestes.Infrastructure\RespawnTester.Infrastructure.csproj", "{A5DE6871-A5A0-448F-B21E-056788059748}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RespawnTester.Application.UnitTests", "test\RespawnTester.Application.UnitTests\RespawnTester.Application.UnitTests.csproj", "{56CD1911-E633-4E81-AE06-EF1E3415C9D9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RespawnTester.Application.UnitTests", "test\RespawnTester.Application.UnitTests\RespawnTester.Application.UnitTests.csproj", "{56CD1911-E633-4E81-AE06-EF1E3415C9D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RespawnTester.Application.FunctionalTests", "test\RespawnTester.Application.FunctionalTest\RespawnTester.Application.FunctionalTests.csproj", "{98EF979B-0623-4A6D-B549-BC3D38BC3E2F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,6 +45,10 @@ Global
 		{56CD1911-E633-4E81-AE06-EF1E3415C9D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{56CD1911-E633-4E81-AE06-EF1E3415C9D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{56CD1911-E633-4E81-AE06-EF1E3415C9D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98EF979B-0623-4A6D-B549-BC3D38BC3E2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98EF979B-0623-4A6D-B549-BC3D38BC3E2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98EF979B-0623-4A6D-B549-BC3D38BC3E2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98EF979B-0623-4A6D-B549-BC3D38BC3E2F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -53,6 +59,7 @@ Global
 		{77452E84-B06F-49EE-8F38-1BE76187CEC8} = {25BF1D04-0A38-4D61-B186-EDB0B9E549A1}
 		{A5DE6871-A5A0-448F-B21E-056788059748} = {25BF1D04-0A38-4D61-B186-EDB0B9E549A1}
 		{56CD1911-E633-4E81-AE06-EF1E3415C9D9} = {ACC6A073-32AB-4AEF-BBA3-FF5357A5CC7B}
+		{98EF979B-0623-4A6D-B549-BC3D38BC3E2F} = {ACC6A073-32AB-4AEF-BBA3-FF5357A5CC7B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1375C1BA-F069-44A7-AB49-2189401CE796}
