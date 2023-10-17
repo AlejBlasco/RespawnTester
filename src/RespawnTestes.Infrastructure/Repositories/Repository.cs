@@ -12,7 +12,7 @@ public class Repository<TEntity> : IRepository<TEntity> where TEntity : class
 
     public Repository(DataContext context)
     {
-        this.context = context ?? throw new ArgumentNullException(nameof(context)); ;
+        this.context = context ?? throw new ArgumentNullException(nameof(context)); 
         this.dbSet = context.Set<TEntity>();
     }
 
@@ -39,6 +39,7 @@ public class Repository<TEntity> : IRepository<TEntity> where TEntity : class
     public virtual async Task Insert(TEntity entity)
     {
         await dbSet.AddAsync(entity);
+        await context.SaveChangesAsync();
     }
 
     public virtual async Task Delete(object id)
@@ -67,5 +68,6 @@ public class Repository<TEntity> : IRepository<TEntity> where TEntity : class
             dbSet.Attach(entityToUpdate);
             context.Entry(entityToUpdate).State = EntityState.Modified;
         });
+        await context.SaveChangesAsync();
     }
 }
