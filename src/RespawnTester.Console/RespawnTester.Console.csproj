@@ -12,8 +12,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\RespawnTestes.Infrastructure\RespawnTester.Infrastructure.csproj" />
     <ProjectReference Include="..\RespawnTester.Application\RespawnTester.Application.csproj" />
+    <ProjectReference Include="..\RespawnTestes.Infrastructure\RespawnTester.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

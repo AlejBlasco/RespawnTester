@@ -16,7 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\src\RespawnTester.Domain\RespawnTester.Domain.csproj" />
+    <ProjectReference Include="..\RespawnTester.Domain\RespawnTester.Domain.csproj" />
   </ItemGroup>
 
 </Project>

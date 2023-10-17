@@ -7,13 +7,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{25BF1D04-0A3
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{ACC6A073-32AB-4AEF-BBA3-FF5357A5CC7B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RespawnTester.Console", "src\RespawnTester.Console\RespawnTester.Console.csproj", "{AF07ECBF-5595-48DD-8C1C-1D119DA8610B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RespawnTester.Console", "src\RespawnTester.Console\RespawnTester.Console.csproj", "{AF07ECBF-5595-48DD-8C1C-1D119DA8610B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RespawnTester.Application", "src\RespawnTester.Application\RespawnTester.Application.csproj", "{753B33C1-559D-4DB2-9648-EA9E9DCADC8F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RespawnTester.Application", "src\RespawnTester.Application\RespawnTester.Application.csproj", "{753B33C1-559D-4DB2-9648-EA9E9DCADC8F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RespawnTester.Domain", "src\RespawnTester.Domain\RespawnTester.Domain.csproj", "{77452E84-B06F-49EE-8F38-1BE76187CEC8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RespawnTester.Domain", "src\RespawnTester.Domain\RespawnTester.Domain.csproj", "{77452E84-B06F-49EE-8F38-1BE76187CEC8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RespawnTester.Infrastructure", "RespawnTestes.Infrastructure\RespawnTester.Infrastructure.csproj", "{A5DE6871-A5A0-448F-B21E-056788059748}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RespawnTester.Infrastructure", "src\RespawnTestes.Infrastructure\RespawnTester.Infrastructure.csproj", "{A5DE6871-A5A0-448F-B21E-056788059748}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RespawnTester.Application.UnitTests", "test\RespawnTester.Application.UnitTests\RespawnTester.Application.UnitTests.csproj", "{56CD1911-E633-4E81-AE06-EF1E3415C9D9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,6 +39,10 @@ Global
 		{A5DE6871-A5A0-448F-B21E-056788059748}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A5DE6871-A5A0-448F-B21E-056788059748}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A5DE6871-A5A0-448F-B21E-056788059748}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56CD1911-E633-4E81-AE06-EF1E3415C9D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56CD1911-E633-4E81-AE06-EF1E3415C9D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56CD1911-E633-4E81-AE06-EF1E3415C9D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56CD1911-E633-4E81-AE06-EF1E3415C9D9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -46,6 +52,7 @@ Global
 		{753B33C1-559D-4DB2-9648-EA9E9DCADC8F} = {25BF1D04-0A38-4D61-B186-EDB0B9E549A1}
 		{77452E84-B06F-49EE-8F38-1BE76187CEC8} = {25BF1D04-0A38-4D61-B186-EDB0B9E549A1}
 		{A5DE6871-A5A0-448F-B21E-056788059748} = {25BF1D04-0A38-4D61-B186-EDB0B9E549A1}
+		{56CD1911-E633-4E81-AE06-EF1E3415C9D9} = {ACC6A073-32AB-4AEF-BBA3-FF5357A5CC7B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1375C1BA-F069-44A7-AB49-2189401CE796}
